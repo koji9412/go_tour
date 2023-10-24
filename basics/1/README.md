@@ -27,3 +27,55 @@ func main() {
 
 3. **`rand.Intn(10)`の動作はどのようなものですか？**  
    - `rand.Intn(10)`は、0から9までのランダムな整数を返す関数です。引数に与えられた値よりも小さい非負の整数を返します。
+
+**問題1**  
+以下のコードは何を出力しますか？
+```go
+package main
+
+import (
+ "fmt"
+ "math/rand"
+)
+
+func main() {
+ fmt.Println("Random number:", rand.Intn(5))
+}
+```
+<details>
+  <summary>回答</summary>
+
+出力: `Random number:`の後に0から4までのランダムな整数が表示されます。
+
+解説: `rand.Intn(5)`は、0から4までのランダムな整数を返す関数です。
+
+</details>
+
+**問題2**  
+以下のコードのエラーを修正して、`Hello, Go!`と出力するようにしてください。
+```go
+package main
+
+import "fmt"
+
+func main() {
+ fmt.Printlin("Hello, Go!")
+}
+```
+<details>
+  <summary>回答</summary>
+
+修正後のコード:
+```go
+package main
+
+import "fmt"
+
+func main() {
+ fmt.Println("Hello, Go!")
+}
+```
+
+解説: `Printlin`という関数は存在しないため、正しくは`Println`と記述する必要があります。
+
+</details>
