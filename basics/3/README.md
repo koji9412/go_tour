@@ -21,13 +21,12 @@ go run ./basics/3/exported-names.go
 fmt.Printf(math.Pi)のケース
 ```zsh
 go run ./basics/3/exported-names.go
-# command-line-arguments
-basics/3/exported-names.go:9:13: cannot use math.Pi (untyped float constant 3.14159) as string value in argument to fmt.Printf
+3.141592653589793
 ```
 
 fmt.Printf(math.pi)のケース
 ```zsh
 go run ./basics/3/exported-names.go
 # command-line-arguments
-basics/3/exported-names.go:9:18: undefined: math.pi
+basics/3/exported-names.go:9:19: undefined: math.pi
 ```
