@@ -6,3 +6,10 @@ Goのプログラムは、パッケージ( package )で構成されます。
 このプログラムでは "fmt" と "math/rand" パッケージをインポート( import )しています。
 
 規約で、パッケージ名はインポートパスの最後の要素と同じ名前になります。 例えば、インポートパスが "math/rand" のパッケージは、 package rand ステートメントで始まるファイル群で構成します。
+
+## Commands
+
+```zsh
+# 実行
+go run ./basics/1/packages.go
+```
